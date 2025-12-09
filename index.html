@@ -3,43 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HyperTap Ball</title>
+  <title>HyperTap Ball Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #071028 0%, #0f1720 100%);
-      color: #e6eef6;
+    /* Reset and base styles */
+    * {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
+      box-sizing: border-box;
     }
-    .container {
-      background: rgba(255,255,255,0.03);
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(180deg, #071028 0%, #0f1720 100%);
+      color: #e6eef6;
+      min-height: 100vh;
     }
     a {
-      color: #ffb703;
       text-decoration: none;
+      color: #ffb703;
       font-weight: bold;
     }
     a:hover {
-      text-decoration: underline;
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      color: #ffb703;
+    }
+    nav a {
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #0a1b3a 0%, #071028 100%);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #ffb703;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #e6eef6;
+    }
+    .hero .btn {
+      padding: 12px 30px;
+      background: #ffb703;
+      color: #071028;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background: #f59e0b;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffb703;
+      text-align: center;
+    }
+
+    /* Cards */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.7);
+    }
+    .card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+    }
+    .card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ffb703;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #e6eef6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.7);
+      color: #e6eef6;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #ffb703;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px){
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to HyperTap Ball</h1>
-    <p>This is the official developer website.</p>
-    <p><a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">
-      View Privacy Policy
-    </a></p>
-  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>HyperTap Ball</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#downloads">Download</a>
+      <a href="#stats">Stats</a>
+      <a href="#updates">Updates</a>
+      <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to HyperTap Ball!</h2>
+    <p>Experience the ultimate tapping game with exciting challenges and high scores.</p>
+    <a href="#downloads" class="btn">Download Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h3>About the Game</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Gameplay</h4>
+        <p>Tap, dodge, and survive! Fast-paced action to challenge your reflexes.</p>
+      </div>
+      <div class="card">
+        <h4>Features</h4>
+        <p>Multiple levels, rewards, leaderboard, and power-ups to keep you hooked.</p>
+      </div>
+      <div class="card">
+        <h4>Community</h4>
+        <p>Join thousands of players worldwide and compete for the top score.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads">
+    <h3>Download</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Android</h4>
+        <p>Download the latest APK and start playing today!</p>
+        <a href="#" class="btn">Download APK</a>
+      </div>
+      <div class="card">
+        <h4>iOS</h4>
+        <p>Coming soon on the App Store.</p>
+        <a href="#" class="btn">Notify Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats">
+    <h3>Game Stats</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Total Players</h4>
+        <p>1,25,000+</p>
+      </div>
+      <div class="card">
+        <h4>Levels</h4>
+        <p>50+</p>
+      </div>
+      <div class="card">
+        <h4>High Score</h4>
+        <p>9999</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Updates Section -->
+  <section id="updates">
+    <h3>Latest Updates</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Version 1.1</h4>
+        <p>New levels, improved graphics, and bug fixes!</p>
+      </div>
+      <div class="card">
+        <h4>Version 1.0</h4>
+        <p>Initial release with 25 challenging levels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HyperTap Ball | <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a></p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+
 </body>
 </html>
