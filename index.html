@@ -3,28 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SNDTECH</title>
+  <title>SNDTECH - Apps Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Roboto', sans-serif;
       background: linear-gradient(180deg, #071028 0%, #0f1720 100%);
       color: #e6eef6;
       min-height: 100vh;
     }
-    a {
-      text-decoration: none;
-      color: #ffb703;
-      font-weight: bold;
-    }
-    a:hover {
-      color: #fff;
-    }
+    a { text-decoration: none; color: #ffb703; font-weight: bold; }
+    a:hover { color: #fff; }
 
     header {
       width: 100%;
@@ -37,29 +27,17 @@
       top: 0;
       z-index: 100;
     }
-    header h1 {
-      font-size: 1.8rem;
-      color: #ffb703;
-    }
-    nav a {
-      margin-left: 20px;
-      font-size: 1rem;
-    }
+    header h1 { font-size: 1.8rem; color: #ffb703; }
+    nav a { margin-left: 20px; font-size: 1rem; }
 
     .hero {
       text-align: center;
       padding: 80px 20px;
       background: linear-gradient(180deg, #0a1b3a 0%, #071028 100%);
     }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #ffb703;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 20px; color: #ffb703; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+
     .btn {
       padding: 12px 30px;
       background: #ffb703;
@@ -69,9 +47,7 @@
       transition: 0.3s;
       display: inline-block;
     }
-    .btn:hover {
-      background: #f59e0b;
-    }
+    .btn:hover { background: #f59e0b; }
 
     section {
       padding: 60px 20px;
@@ -105,21 +81,15 @@
       background: rgba(255,255,255,0.1);
       transform: translateY(-5px);
     }
-    .card h4 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #ffb703;
-    }
-    .card p { font-size: 1rem; }
+    .card h4 { font-size: 1.2rem; margin-bottom: 10px; color: #ffb703; }
+    .card p { font-size: 1rem; margin-bottom: 10px; }
+    .stats { font-size: 0.9rem; opacity: 0.8; }
 
     footer {
       text-align: center;
       padding: 30px 20px;
       background: rgba(0,0,0,0.7);
       color: #e6eef6;
-    }
-    footer a {
-      margin: 0 10px;
     }
 
     @media(max-width: 768px){
@@ -129,48 +99,109 @@
 </head>
 <body>
 
-  <header>
-    <h1>SNDTECH</h1>
-    <nav>
-      <a href="#apps">Apps</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>SNDTECH</h1>
+  <nav>
+    <a href="#apps">Apps</a>
+    <a href="#stats">Statistics</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <h2>Welcome to SNDTECH</h2>
-    <p>Your one place for Android apps created by SNDTECH.</p>
-  </section>
+<section class="hero">
+  <h2>Welcome to SNDTECH</h2>
+  <p>Professional Android apps crafted with performance, creativity, and passion.</p>
+</section>
 
-  <section id="apps">
-    <h3>Our Apps</h3>
-    <div class="cards">
-      <div class="card">
-        <h4>HyperTap Ball</h4>
-        <p>A fast‑paced tapping game to test your reflexes.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.snd.hypertapball" class="btn">Download</a>
-        <br/><br/>
-        <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a>
-      </div>
+<section id="stats">
+  <h3>Company Dashboard</h3>
+  <div class="cards">
 
-      <!-- Add more apps here later -->
+    <div class="card">
+      <h4>Total Downloads</h4>
+      <p style="font-size:2rem; color:#fff;">10,000+</p>
+      <p class="stats">Across all SNDTECH applications</p>
     </div>
-  </section>
 
-  <section id="about">
-    <h3>About SNDTECH</h3>
-    <p style="text-align:center; max-width:800px; margin:auto; font-size:1.1rem;">SNDTECH is a developer brand focused on building simple, fun, and user‑friendly mobile apps. More apps will be added soon.</p>
-  </section>
+    <div class="card">
+      <h4>Active Users</h4>
+      <p style="font-size:2rem; color:#fff;">3,200+</p>
+      <p class="stats">Monthly active users</p>
+    </div>
 
-  <section id="contact">
-    <h3>Contact</h3>
-    <p style="text-align:center;">For support or feedback, contact: <br><br><a href="mailto:srinadht276@gmail.com">sndtechapps@gmail.com</a></p>
-  </section>
+    <div class="card">
+      <h4>Apps Published</h4>
+      <p style="font-size:2rem; color:#fff;">4</p>
+      <p class="stats">More apps coming soon</p>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 SNDTECH</p>
-  </footer>
+  </div>
+</section>
+
+<section id="apps">
+  <h3>Our Apps</h3>
+  <div class="cards">
+
+    <div class="card">
+      <h4>HyperTap Ball</h4>
+      <p>A fast-paced reaction game to test your tapping speed.</p>
+      <p class="stats">⭐ 4.7 | 5,000+ downloads</p>
+      <a href="https://play.google.com/store/apps/details?id=com.snd.hypertapball" class="btn">Download</a>
+      <br><br>
+      <a href="https://srinadht276.github.io/Privacy-Policy-HyperTapBall/Privacy-Policy-HyperTapBall.html">Privacy Policy</a>
+    </div>
+
+    <div class="card">
+      <h4>Zen Notes</h4>
+      <p>Minimal, modern, and fast note-taking app.</p>
+      <p class="stats">⭐ 4.5 | 2,000+ downloads</p>
+      <a href="#" class="btn">Coming Soon</a>
+    </div>
+
+    <div class="card">
+      <h4>Pocket Vibration</h4>
+      <p>Custom vibration patterns for relaxation & focus.</p>
+      <p class="stats">⭐ 4.8 | 1,500+ downloads</p>
+      <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="card">
+      <h4>Shake Alert</h4>
+      <p>Emergency shake detector for sending quick alerts.</p>
+      <p class="stats">⭐ 4.6 | 1,200+ downloads</p>
+      <a href="#" class="btn">Download</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="team">
+  <h3>Our Team</h3>
+  <p style="text-align:center; max-width:800px; margin:auto; font-size:1.1rem;">
+    SNDTECH is a one-person indie development studio founded by **Srinadh**.  
+    Focused on building high-quality, lightweight, and user-friendly Android applications.
+  </p>
+</section>
+
+<section id="contact">
+  <h3>Contact & Support</h3>
+  <p style="text-align:center;">
+    Email us anytime: <br><br>
+    <a href="mailto:sndtechapps@gmail.com">sndtechapps@gmail.com</a> <br><br>
+    Follow us on:
+  </p>
+
+  <p style="text-align:center; margin-top:10px;">
+    <a href="#">Twitter</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">YouTube</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 SNDTECH — All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
